@@ -30,6 +30,10 @@
   width: 150px;
   margin-left: 40px;
 }
+.fa-bars{
+  color: aliceblue;
+  opacity: 0;
+}
 .refrences-div{
   flex: 1;
   display: flex;
@@ -95,71 +99,47 @@ color: white;
 @media (max-width: 700px) {
     
     .navigation-bar{
-      margin: 0;
-      padding: 0;
-      position:fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      height: 100%;
-      width: 200px;
-      justify-content: center;
-      /*
-      margin-left : -2000px;
-      */
-      flex-direction: column;
-      border-radius: 0;
-      padding: 20px;
-      z-index: 11;
-    }
-    .logo-div{
-      flex: 0;
-    }
-    .logo-div img{
       position: fixed;
-      top: 30px;
-      left: 10px;
-    }
-    .navigation-links{
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 200px;
+      height: 100vh;
+      border-radius: 0;
       display: flex;
       flex-direction: column;
       gap: 20px;
-      align-items: center;
+      margin-left: 0;
+      
+    }
+    .logo-div{
+      flex: 0.5;
+      display: flex;
       justify-content: center;
-      padding-left: 0px;
-      height: 40%;
+      align-items: center;
+      margin-top: 20px;
+    }
     
+    .navigation-links{
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      margin-left: 0;
+      padding: 0;
     }
     .navigation-links li{
-      width: 80%;
+      width: 120px;
       height: 50px;
       border: 1px solid white;
       display: flex;
       justify-content: center;
       align-items: center;
+      border-radius: 30px;
     }
-    .navigation-links li:hover{
-      background-color: rgb(65, 77, 88);
-      cursor: pointer;
+    .navigation-links li:active{
+      opacity: 0.3;
     }
-    .navigation-links li a{
-      font-size: 20px;
-    }
-    .refrences-div{
-      height: 50%;  
-      
-    }  
-    .button-div{
-      flex: 0;
-      width: 100%;
-      height: 60px;
     
-    }
-    .button-div{
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
   
 }
