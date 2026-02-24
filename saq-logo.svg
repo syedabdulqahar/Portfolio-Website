@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200"  width="600" height="200" role="img" aria-label="SAQ logo">
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#efeff8ff"/>
+      <stop offset="1" stop-color="#8775ecff"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset in="SourceAlpha" dx="0" dy="6" result="off"/>
+      <feGaussianBlur in="off" stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0.25" result="shadow"/>
+      <feBlend in="SourceGraphic" in2="shadow" mode="normal"/>
+    </filter>
+
+    <symbol id="q-tail" viewBox="0 0 60 60">
+      <circle cx="30" cy="30" r="26" fill="none" stroke="white" stroke-width="6" opacity="0.95"/>
+      <path d="M40 40 L56 56" stroke="white" stroke-width="6" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="6" y="6" width="588" height="188" rx="20" fill="transparent"/>
+
+  <g filter="url(#shadow)" transform="translate(20,0)">
+    <text x="20" y="140" font-family="Segoe UI, Roboto, Inter, system-ui, sans-serif"
+          font-weight="800" font-size="128" letter-spacing="-6" fill="url(#grad)">
+      SAQ
+    </text>
+
+    <use href="#q-tail" x="420" y="30" width="60" height="60" opacity="0.95" transform="translate(0,0) scale(1)"/>
+  </g>
+</svg>

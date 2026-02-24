@@ -1,0 +1,94 @@
+.navigation-bar{
+  width: 98%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  margin-left:15px;
+   border-bottom: solid;
+  border-bottom-left-radius: 25px ;
+  border-bottom-right-radius: 25px ;
+  border-top-left-radius:25px ;
+  border-top-right-radius:25px ;
+  position: fixed;
+  top: 10px;
+  border: none;
+  box-shadow: 0px 0px 20px rgba(108, 116, 235, 0.8);
+  z-index: 11;
+  background-color: rgb(20, 20, 26);
+  transition: 0.5s;
+  
+}
+.navigation-bar:hover{
+  box-shadow: 0px 0px 10px rgb(80, 102, 224);
+}
+.logo-div{
+  flex: 1;
+}
+.logo-div img{
+  height: 50px;
+  width: 150px;
+  margin-left: 40px;
+}
+.refrences-div{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-links{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation-links li {
+list-style: none;
+color: white;
+}
+.navigation-links li a{
+  text-decoration: none;
+  
+  color: rgb(211, 218, 224);
+}
+.navigation-links li:hover a{
+  
+  text-shadow: 0px 0px 10px rgba(255, 255, 255,1);
+  color: white;
+}
+.navigation-links li:active a{
+  color: rgb(32, 2, 80);
+}
+.button-div{
+  flex: 1 ;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.theme-button{
+  height: 40px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: rgb(225, 233, 247);
+  width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family:Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 10px rgba(220, 222, 224, 0.877);
+  border: none;
+  transition: 0.5s;
+}
+
+.theme-button:hover{
+  box-shadow: 0px 0px 20px rgba(71, 96, 235, 0.8);
+  color: yellow;
+  cursor: pointer;
+}
+.theme-button i{
+  color: rgb(230, 250, 5);
+  
+}
+

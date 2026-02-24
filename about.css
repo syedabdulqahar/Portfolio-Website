@@ -1,0 +1,307 @@
+  .about-page {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(33, 33, 37);
+  padding-top: 90px;
+}
+.about-page h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  animation-name: glowAbout;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+
+}
+@keyframes glowAbout {
+  from{
+    color: white;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255),
+                  0px 0px 2px rgb(200, 200, 255),
+                  0px 0px 2px rgb(38, 38, 124);
+  }to
+  {
+    color: rgb(115, 160, 175);
+    color:rgb(143, 172, 216);
+    
+    text-shadow: 0px 0px 2px rgb(14, 85, 109),
+                  0px 0px 2px rgb(50, 120, 150),
+                  0px 0px 5px rgb(100, 150, 180) ;
+
+  }
+}
+.about-section{
+  width: 100%;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-around;
+}
+
+.left-div,.mid-div,.right-div{
+  width: 350px;
+  height: 350px;
+  margin-top: 40px;
+  
+  border-color: solid rgb(81, 86, 160) 2px;
+  box-shadow: 0 0 10px rgba(81, 86, 160, 0.5),
+              inset 0 0 20px rgba(116, 126, 226, 0.5),
+              0 0 10px rgba(81, 86, 160, 0.3);
+
+  border-radius: 35px;
+
+  background-color: rgb(6, 46, 59);
+  filter:brightness(100px);
+ transition: 0.2s;
+}
+.left-div:hover,.mid-div:hover,.right-div:hover{
+  box-shadow: 0 0 20px rgba(81, 86, 160, 0.8),
+              inset 0 0 30px rgba(116, 126, 226, 0.8),
+              0 0 20px rgba(81, 86, 160, 0.6);
+  transform: scale(1.05);
+ 
+}
+
+.left-div main,.mid-div main,.right-div main{
+  width: 80%;
+  margin: auto;
+  padding-top:30px ;
+}
+.Header{
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: Anton;
+  color:rgb(111, 90, 133);
+  transition: 0.2s;
+  
+}
+.left-div:hover .Header,
+.mid-div:hover .Header,
+.right-div:hover .Header{
+  color: rgb(224, 167, 224);
+  font:  26px 'Anton', sans-serif;
+}
+.left-div:hover hr,
+.mid-div:hover hr,
+.right-div:hover hr{
+  box-shadow: 0 0 10px rgba(224, 226, 250, 0.8);
+
+}
+.left-div:hover,
+.mid-div:hover ,
+.right-div:hover {
+  cursor: pointer;
+
+}
+
+
+hr{
+  border: none;
+  height: 2px;
+  background-color: rgba(177, 180, 228, 0.8);
+  margin-bottom: 10px;
+  transition: 0.15s;
+}
+.Education-info{
+  margin:0;
+  padding: 0;
+}
+.University-info,.College-info{
+  display: flex;
+}
+.uni-logo,.college-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: 0.2s;
+}
+.left-div:hover .uni-logo,
+.left-div:hover .college-logo{
+  box-shadow: 0 0 10px rgba(224, 226, 250, 0.8);
+}
+.uni-data,.college-data {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 150px;
+}
+.uni-data p,.college-data p{
+  font-size: smaller;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 5px rgba(248, 230, 230, 0.877);
+}
+.uni-data ul li,.college-data ul li{
+  font-size: 12px;
+  color:rgb(165, 165, 154)
+}
+
+.skill-icon{
+  width:40px;
+  height:40px;
+}
+.Skill-main-div{
+  display: flex;
+  justify-content: space-around;
+}
+.skills-grid-div{
+  
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;  
+  
+}
+.skills-div-html,.skills-div-css,.skills-div-js,.skills-div-git,.skills-div-github{
+  width: 100px;
+  height: 50px;
+  border: solid; 
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;}
+
+.skills-div-html{
+  background-color: rgb(42, 209, 42);
+  box-shadow:0px 0px 10px rgba(201, 211, 70, 0.966);
+  color:black;
+  border-color: green;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+.skills-div-css{
+  background-color: rgb(73, 73, 204);
+  box-shadow:0px 0px 10px rgba(214, 213, 255, 0.966);
+  color:white;
+  border-color: green;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+.skills-div-js,.skills-div-git{
+ 
+  background-color: yellow;
+  box-shadow:0px 0px 10px rgba(136, 255, 25, 0.966);
+  color:black;
+  border-color: green;
+  transition: 0.1s;
+  border-radius: 10px;
+}
+.skills-div-git{
+  background-color: rgb(198, 27, 27);
+  color: black;
+}
+.skills-div-github{
+  background-color: rgb(34, 32, 32);
+}
+.skills-div-html:hover,.skills-div-css:hover,.skills-div-js:hover,.skills-div-git:hover{
+  border: none;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.fa-html5,.fa-css,.fa-js,.fa-git-alt,.fa-github{
+  font-size: 25px;
+
+}
+.fa-html5{
+  font-size: 30px;
+  color: rgb(21, 102, 21);
+
+}
+
+.fa-css{
+  font-size: 25px;
+  font-weight: 89;
+  color:white;
+  margin-left: -6px;
+  margin-right: 3px;
+}
+.fa-js{
+  color: black;
+  margin-left: -24px;
+  margin-right: 3px;
+}
+.fa-git-alt{
+  font-size: 30px;
+  margin-left: -20px;
+}
+.marquee-tag{
+  display: flex;
+  gap:30px
+}
+.skills-div-js,.skills-div-git,.skills-div-github,.skills-div-html,.skills-div-css{
+  width: 140px; 
+}
+
+/*        RIGHT DIV                                */
+.Profile-main-div{
+  width: 100%;
+  height: 230px
+
+}
+.socials-flexbox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.socials-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials-div picture{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials-link-div{
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  
+}
+.socials-link-div a{
+  color: white;
+  text-decoration: none;
+  transition: 0.15s;
+}
+.socials-link-div a:hover{
+  text-decoration: underline;
+  cursor:alias;
+}
+
+
+.socials-picture-linkedin,
+.socials-picture-github,
+.socials-picture-gmail{
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 10px rgba(214, 213, 255, 0.966);
+  border-radius: 50%;
+}
+.socials-picture-github{
+  border-radius: 50%;
+}
+.socials-picture-gmail{
+  border-radius: 50%;
+}
+
+.socials-picture-linkedin:hover,
+.socials-picture-github:hover,
+.socials-picture-gmail:hover{
+  border:2px solid lightblue;
+  border-radius: 50%;
+  cursor:alias;
+}

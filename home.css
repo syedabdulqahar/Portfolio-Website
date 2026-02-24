@@ -1,0 +1,124 @@
+.home-div{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(20, 20, 26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*
+.information-div{
+  width: 550px;
+  height: 250px;
+  border: 2px solid #00d4ff;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5),
+              inset 0 0 20px rgba(116, 226, 248, 0.5),
+              0 0 10px rgba(0, 212, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(20, 20, 26, 0.8);
+}
+*/
+.information-div{
+  flex-wrap: wrap;
+}
+
+
+
+.information-div h1{
+  font-family: Anton;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0px 0px 20px rgba(0, 212, 255, 0.8);
+  font-size: 48px;
+  
+}
+.column{
+  color: #00d4ff;
+  text-shadow: 0px 0px 15px rgba(0, 212, 255, 0.8),
+               0px 0px 30px rgba(0, 212, 255, 0.6);
+}
+.name,.circle {
+  color: #00d4ff;
+  font-style:italic;
+  text-shadow: 0px 0px 10px rgba(228, 188, 188, 0.9),
+               0px 0px 10px rgba(0, 212, 255, 0.6),
+               0px 0px 10px rgba(0, 212, 255, 0.4);
+    animation: glowName 3s ease-in-out infinite;
+}
+@keyframes glowName {
+  0%, 100% {
+    text-shadow: 0px 0px 20px rgba(189, 27, 221, 0.9),
+                 0px 0px 10px rgba(0, 212, 255, 0.6),
+                 0px 0px 20px rgba(0, 212, 255, 0.4);
+                 
+  }
+  50% {
+    text-shadow: 0px 0px 10px rgb(5, 69, 187),
+                 0px 0px 20px rgba(0, 212, 255, 0.8),
+                 0px 0px 40px rgba(0, 212, 255, 0.6);
+  }
+
+}
+
+.bio{
+  color: rgb(148, 131, 158);
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bio:hover{
+  color: #59bbc2;
+  transition: color 0.5s ease-in-out;
+  cursor: pointer;
+}
+.bio span{
+  color: #00d4ff;
+  font-weight: 600;
+}
+.bio-data{
+  margin-top: 15px;
+  color: #00d4ff;
+  line-height: 40px;
+  width: 800px;
+  font-size: 24px;
+}
+.html{
+  padding: 5px 10px;
+  background-color: rgb(42, 209, 42);
+  border-radius: 15px;
+  font-size: 17px;
+  color: black;
+}
+.css{
+  padding: 5px 10px;
+  background-color: rgb(73, 73, 204);
+  border-radius: 15px;
+  font-size: 17px;
+  color: white;
+}
+.JavaScript{
+  padding: 5px 10px;
+  background-color:yellow;
+  border-radius: 15px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+
+.home-picture{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url('./Home-picture.jpeg');
+  background-size: cover;
+  background-position: center;
+  margin-left: 50px;
+  animation: circular 5s linear infinite;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  z-index: -0;
+}

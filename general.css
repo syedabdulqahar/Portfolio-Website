@@ -1,0 +1,19 @@
+*{
+  margin :0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+ 
+  
+  scroll-behavior: smooth;
+}
+html
+{ 
+   scroll-behavior: smooth;
+  scrollbar-color: rgb(100, 100, 255) rgb(20, 20, 26);
+  scrollbar-width: 30px;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
