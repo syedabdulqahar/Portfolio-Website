@@ -18,11 +18,19 @@
 <body style="position: relative;">
   <nav class="main-navigation">  
       <nav  class="navigation-bar" id="navigation-id">
+         <i class="fa-solid fa-bars" id="bar" onclick="
+              document.getElementById('navigation-id').style.marginRight='0px';
+              document.getElementById('bar').style.opacity='0'
+          " ></i> <!--Menu Icon--> 
         <div class="logo-div">
-         <img src="./saq-logo.svg" alt="my logo">
-         <i class="fa-solid fa-bars"></i>
+         <img class="logo" src="./saq-logo.svg" alt="my logo">
         </div>
+        <i class="fa-solid fa-x" id="x" onclick="
+              document.getElementById('navigation-id').style.marginRight='-200px';
+              document.getElementById('bar').style.opacity='1'
+            "></i>
         <div class="refrences-div">
+          
           <ul class="navigation-links">
             <li><a href="#home"  ">Home</a></li>
             <li><a href="#about-me"  ">About me</a></li>
