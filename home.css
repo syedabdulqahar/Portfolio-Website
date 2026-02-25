@@ -21,7 +21,7 @@
 */
 .information-div{
   flex-wrap: wrap;
-}
+ }
 
 
 
@@ -124,3 +124,37 @@
 }
 /* Responsiveness */
 
+@media (max-width: 568px) {
+  .home-div{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    
+  }
+  .information-div{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 20px 0px 20px;
+  }
+  .information-div h1{
+    width: 100%;
+    
+    font-size: 40px;
+  }
+  .bio{
+    width:100%;
+    color: #dceef1;
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
+    gap: 10px;
+  }
+  .bio-data{
+    width: 85%;
+    margin-top: 50px;
+    
+  }
+}
