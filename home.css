@@ -142,12 +142,13 @@
   .information-div h1{
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 200%;
   }
   .bio{
     width:100%;
     color: #dceef1;
     display: flex;
+    font-size: 100%;
     justify-content: center;
     align-items: center;
     margin-left: -20px;
@@ -155,6 +156,7 @@
   }
   .bio-data{
     width: 85%;
+    font-size: 140%;
     margin-top: 50px;
     text-align: center;
     
