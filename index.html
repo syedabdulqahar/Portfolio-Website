@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Qahar's Portfolio</title>
   <link rel="icon" href="./picture-dp.png">  
   <link rel="stylesheet" href="./general.css">
@@ -15,41 +16,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body style="position: relative;">
+<body >
   <nav class="main-navigation">  
       <nav  class="navigation-bar" id="navigation-id">
-         <i class="fa-solid fa-bars" id="bar" onclick="
-              document.getElementById('navigation-id').style.marginRight='0px';
-              document.getElementById('bar').style.opacity='0'
-          " ></i> <!--Menu Icon--> 
+         <i class="fa-solid fa-bars" id="bar" onclick="OpenMenu()"></i> <!--Menu Icon--> 
         <div class="logo-div">
          <img class="logo" src="./saq-logo.svg" alt="my logo">
         </div>
-        <i class="fa-solid fa-x" id="x" onclick="
-              document.getElementById('navigation-id').style.marginRight='-200px';
-              document.getElementById('bar').style.opacity='1'">
-        </i>
-        <div class="refrences-div">
-          <ul class="navigation-links">
-            <li><a href="#home"  ">Home</a></li>
-            <li><a href="#about-me"  ">About me</a></li>
-            <li><a href="#projects"  ">Projects</a></li>
-          </ul>
-        </div>
-        <div class="button-div">
-          
-          <a href="./Syed Abdul Qahar Resume .pdf" download class="cv-btn" >
-            <button class="theme-button">
-             <i class="fa-solid fa-download"></i> <span>Resume </span> 
-            </button>
-          </a>
-          
+       
+        <div class="mobile-freindly">
+           <i class="fa-solid fa-x" id="x" onclick="CloseMenu()"></i>
+          <div class="refrences-div">
+            <ul class="navigation-links">
+              <li><a href="#home"  ">Home</a></li>
+              <li><a href="#about-me"  ">About me</a></li>
+              <li><a href="#projects"  ">Projects</a></li>
+            </ul>
+          </div>
+          <div class="button-div">
+            
+            <a href="./Syed Abdul Qahar Resume .pdf" download class="cv-btn" >
+              <button class="theme-button">
+              <i class="fa-solid fa-download"></i> <span>Resume </span> 
+              </button>
+            </a>
+            
+          </div>
         </div>
       </nav>
   </nav>
+
   <main id="home" class="home-div">
     <section class="information-div">
-      <h1> I <span class="column">'</span>m <span class="name">Syed Abdul Qahar</span></h1>
+      <h1> I <span class="column">'</span>m <span class="name" >Syed Abdul Qahar</span></h1>
        <br>
       <p class="bio">
         Frontend Developer  <span class="circle" >||</span> Future Full Stack Developer 
@@ -60,10 +59,8 @@
     </section>
   </main>
   
-  
-  
   <main id="about-me" class="about-page">
-    <header>
+    <header>  
       <h1>About Me</h1>
     </header>
     <section class="about-section">
@@ -209,28 +206,22 @@
     </section>
   </main>  
   
-  
-  
-  <main id="projects" class="projects1-main">
-    <h1>My Work</h1>
-    <div id="slider">
-        <figure>
-              <img src="./projects/Instagram clone.png" alt="">
-              <img src="./projects/whatsapp-clone.png" alt="">
-              <img src="./projects/Youtube-clone.png" alt="">
-              <img src="./projects/Instagram clone.png" alt="">
-              <img src="./projects/whatsapp-clone.png" alt="">
-              <img src="./projects/Youtube-clone.png" alt="">
-
-            </figure>
-    </div>
-    
-    <footer></footer>
+  <main class="Project-Div">
+    <section class="Header">
+      
+    </section>
+    <section class="Body">
+      
+    </section>
   </main>
 </body>
 <script>
-
-
-
+ let navbar =document.querySelector('.mobile-freindly');
+ const OpenMenu=()=>{
+    navbar.style.marginRight="0%";
+ }
+ const CloseMenu =()=>{
+  navbar.style.marginRight="-100%"
+ }
 </script>
 </html>
