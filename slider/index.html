@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Sizing Demo</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <div class="main-container">
+    <button class="project-toggle-left">&lt;</button>
+    <div class="project-container">
+        <div class="project">
+              <div class="project-image">
+                <a href="../projects/Instagram clone.png">
+                  <img class="project-ss" src="../projects/Instagram clone.png" alt="">
+                </a>
+              </div>
+              <div class="project-name">
+                <div class="project-name-header">
+                  <h2>Instagram Clone</h2>
+                  <a href="https://github.com/syedabdulqahar/instagram-clone">
+                    <i class="fa-brands fa-github">
+                      <div class="tooltip">
+                        Github Link
+                      </div>
+                    </i> 
+                  </a>
+                </div>
+                <p class="project-techstack">
+                  HTML CSS
+                </p>
+              </div>
+        </div>
+        <div class="project">
+              <div class="project-image">
+                <a href="../projects/Instagram clone.png">
+                  <img class="project-ss" src="../projects/Instagram clone.png" alt="">
+                </a>
+              </div>
+              <div class="project-name">
+                <div class="project-name-header">
+                  <h2>Instagram Clone</h2>
+                  <a href="https://github.com/syedabdulqahar/instagram-clone">
+                    <i class="fa-brands fa-github">
+                      <div class="tooltip">
+                        Github Link
+                      </div>
+                    </i> 
+                  </a>
+                </div>
+                <p class="project-techstack">
+                  HTML CSS
+                </p>
+              </div>
+        </div>
+        <div class="project">
+              <div class="project-image">
+                <a href="../projects/Instagram clone.png">
+                  <img class="project-ss" src="../projects/Instagram clone.png" alt="">
+                </a>
+              </div>
+              <div class="project-name">
+                <div class="project-name-header">
+                  <h2>Instagram Clone</h2>
+                  <a href="https://github.com/syedabdulqahar/instagram-clone">
+                    <i class="fa-brands fa-github">
+                      <div class="tooltip">
+                        Github Link
+                      </div>
+                    </i> 
+                  </a>
+                </div>
+                <p class="project-techstack">
+                  HTML CSS
+                </p>
+              </div>
+        </div>
+    </div>
+    <button class="project-toggle-right">&gt;</button>
+  </div>
+
+  <script>
+    const projectContainer = document.querySelector('.project-container');
+    const projects = document.querySelectorAll('.project');
+    const leftBtn = document.querySelector('.project-toggle-left');
+    const rightBtn = document.querySelector('.project-toggle-right');
+
+    let currentIndex = 0;
+
+    function updateSlider() {
+      const translateX = -currentIndex * 100;
+      projectContainer.style.transform = `translateX(${translateX}%)`;
+    }
+
+    leftBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : projects.length - 1;
+      updateSlider();
+    });
+
+    rightBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex < projects.length - 1) ? currentIndex + 1 : 0;
+      updateSlider();
+    });
+  </script>
+</body>
+</html>

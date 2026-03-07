@@ -1,5 +1,12 @@
+.main-navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigation-bar{
-  width: 100%;
+  margin-top: 10px;
+  width: 90%;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -13,14 +20,14 @@
   position: fixed;
   top: 10px;
   border: none;
-  box-shadow: 0px 0px 20px rgba(108, 116, 235, 0.8);
+  box-shadow: 0px 0px 10px rgba(108, 116, 235, 0.8);
   z-index: 11;
   background-color: rgb(20, 20, 26);
   transition: 0.5s;
   
 }
 .navigation-bar:hover{
-  box-shadow: 0px 0px 10px rgb(80, 102, 224);
+  box-shadow: 0px 0px 20px rgb(80, 102, 224);
 }
 .logo-div{
   flex: 1;
@@ -110,6 +117,9 @@ color: white;
 @media (max-width: 768px) {
    .navigation-bar{
     border: none;
+    width: 100%;
+    margin-top: 0;
+    
     border-bottom: none;
     border-bottom-left-radius: 0 ;
     border-bottom-right-radius: 0 ;
@@ -173,7 +183,7 @@ color: white;
     font-size: 18px;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius:10px;
   }
     .navigation-links li:hover{
       border: 1px solid white;

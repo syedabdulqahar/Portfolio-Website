@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Qahar's Portfolio</title>
-  <link rel="icon" href="./picture-dp.png">  
-  <link rel="stylesheet" href="./general.css">
-  <link rel="stylesheet" href="./home.css">
-  <link rel="stylesheet" href="./nav.css">
-  <link rel="stylesheet" href="./about.css">
-  <link rel="stylesheet" href="./projects.css">
+  <link rel="icon" href="./styles/picture-dp.png">
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/projects.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 </head>
-<body >
-  <nav class="main-navigation">  
-      <nav  class="navigation-bar" id="navigation-id">
-         <i class="fa-solid fa-bars" id="bar" onclick="OpenMenu()"></i> <!--Menu Icon--> 
-        <div class="logo-div">
-         <img class="logo" src="./saq-logo.svg" alt="my logo">
-        </div>
-       
-        <div class="mobile-freindly">
-           <i class="fa-solid fa-x" id="x" onclick="CloseMenu()"></i>
-          <div class="refrences-div">
-            <ul class="navigation-links">
-              <li><a href="#home"  ">Home</a></li>
-              <li><a href="#about-me"  ">About me</a></li>
-              <li><a href="#projects"  ">Projects</a></li>
+
+<body>
+  <nav class="main-navigation">
+    <nav class="navigation-bar" id="navigation-id">
+      <i class="fa-solid fa-bars" id="bar" onclick="OpenMenu()"></i> <!--Menu Icon-->
+      <div class="logo-div">
+        <img class="logo" src="./saq-logo.svg" alt="my logo">
+      </div>
+
+      <div class="mobile-freindly">
+        <i class="fa-solid fa-x" id="x" onclick="CloseMenu()"></i>
+        <div class="refrences-div">
+          <ul class="navigation-links">
+            <li><a href="#home" ">Home</a></li>
+              <li><a href=" #about-me" ">About me</a></li>
+              <li><a href=" #projects" class="projects" ">Projects</a></li>
             </ul>
           </div>
-          <div class="button-div">
-            
-            <a href="./Syed Abdul Qahar Resume .pdf" download class="cv-btn" >
-              <button class="theme-button">
-              <i class="fa-solid fa-download"></i> <span>Resume </span> 
-              </button>
-            </a>
-            
-          </div>
+          <div class=" button-div">
+
+                <a href="./Syed Abdul Qahar Resume .pdf" download class="cv-btn">
+                  <button class="theme-button">
+                    <i class="fa-solid fa-download"></i> <span>Resume </span>
+                  </button>
+                </a>
+
         </div>
-      </nav>
+      </div>
+    </nav>
   </nav>
 
   <main id="home" class="home-div">
     <section class="information-div">
-      <h1> I <span class="column">'</span>m <span class="name" >Syed Abdul Qahar</span></h1>
-       <br>
+      <h1> I <span class="column">'</span>m <span class="name">Syed Abdul Qahar</span></h1>
+      <br>
       <p class="bio">
-        Frontend Developer  <span class="circle" >||</span> Future Full Stack Developer 
+        Frontend Developer <span class="circle">||</span> Future Full Stack Developer
       </p>
       <p class="bio-data">
-        Passionate about crafting engaging and user-friendly web experiences using <span class="html">HTML</span> , <span class="css">CSS</span>, & <span class="JavaScript">JavaScript</span>
-      </p>  
+        Passionate about crafting engaging and user-friendly web experiences using <span class="html">HTML</span> ,
+        <span class="css">CSS</span>, & <span class="JavaScript">JavaScript</span>
+      </p>
     </section>
   </main>
-  
+
   <main id="about-me" class="about-page">
-    <header>  
+    <header>
       <h1>About Me</h1>
     </header>
     <section class="about-section">
       <div class="left-div">
         <main>
-          <header class="Header">  
+          <header class="Header">
             <i class="fa-solid fa-graduation-cap"></i>
             Education
           </header>
@@ -85,16 +100,17 @@
             </main>
 
             <main class="College-info">
-                <picture>
-                  <img src="./about-me/pgc.png" class="college-logo" alt="">
-                </picture>
-               <div class="college-data">
-                  <p>Punjab Group of Colleges </p>
-                  <ul>
-                    <li>2020 - 2022</li>
-                  </ul>
-                </div>    
+              <picture>
+                <img src="./about-me/pgc.png" class="college-logo" alt="">
+              </picture>
+              <div class="college-data">
+                <p>Punjab Group of Colleges </p>
+                <ul>
+                  <li>2020 - 2022</li>
+                </ul>
+              </div>
             </main>
+
           </section>
         </main>
       </div>
@@ -103,7 +119,7 @@
         <main>
           <header class="Header">
             <i class="fa-solid fa-laptop-code"></i>
-              Skills
+            Skills
           </header>
           <hr>
           <section class="Skill-main-div">
@@ -125,7 +141,6 @@
                   <div class="skills-div-github">
                     <i class="fa-brands fa-github"></i> Github
                   </div>
-
                   <div>
                     NOTE : Learning Backend (Node js)
                   </div>
@@ -144,84 +159,196 @@
                   <div class="skills-div-github">
                     <i class="fa-brands fa-github"></i> Github
                   </div>
-              </main>
+                </main>
               </marquee>
             </div>
 
           </section>
         </main>
-        
-      </div>
 
+      </div>
 
       <div class="right-div">
         <main>
-           <header class="Header">
-               <i class="fa-solid fa-circle-user"></i>  Socials
-            </header>
-            <hr>
-            <section class="Profile-main-div">
-                <div class="socials-flexbox">
-                  <article class="socials-div">
-                    <picture>
-                      <a href="https://www.linkedin.com/in/syed-a-47bb37274/" target="_blank">
-                      <img class="socials-picture-linkedin" src="./about-me/linkedin.png" alt=""> 
-                      </a>  
-                    </picture>
-                    <div class="socials-link-div">
-                      <a target="_blank" href="https://www.linkedin.com/in/syed-a-47bb37274/"> Linkedin </a>
-                    </div>
-                  </article>
-                  <article class="socials-div">
-                    <picture>
-                      <a href="https://github.com/syedabdulqahar" target="_blank">
-                        <img class="socials-picture-github" src="./about-me/github.png" alt="">
-                      </a>  
-                    </picture>
-                    <div class="socials-link-div">
-                      <a href="https://github.com/syedabdulqahar" target="_blank"> Github</a>
-                    </div>
-
-                  </article>
-                  <article class="socials-div">
-                    <picture>
-                      <a href="mailto:syedabdulqahar2004@gmail.com" target="_blank">
-                        <img class="socials-picture-gmail" src="./about-me/Gmail.png" alt="">
-                      </a> 
-                    </picture>
-                    <div class="socials-link-div">
-                      <a href="mailto:syedabdulqahar2004@gmail.com" target="_blank"> syedabdulqahar2004 </a>
-                    </div>
-
-                  </article>
-
+          <header class="Header">
+            <i class="fa-solid fa-circle-user"></i> Socials
+          </header>
+          <hr>
+          <section class="Profile-main-div">
+            <div class="socials-flexbox">
+              <article class="socials-div">
+                <picture>
+                  <a href="https://www.linkedin.com/in/syed-a-47bb37274/" target="_blank">
+                    <img class="socials-picture-linkedin" src="./about-me/linkedin.png" alt="">
+                  </a>
+                </picture>
+                <div class="socials-link-div">
+                  <a target="_blank" href="https://www.linkedin.com/in/syed-a-47bb37274/"> Linkedin </a>
+                </div>
+              </article>
+              <article class="socials-div">
+                <picture>
+                  <a href="https://github.com/syedabdulqahar" target="_blank">
+                    <img class="socials-picture-github" src="./about-me/github.png" alt="">
+                  </a>
+                </picture>
+                <div class="socials-link-div">
+                  <a href="https://github.com/syedabdulqahar" target="_blank"> Github</a>
                 </div>
 
-            </section>
+              </article>
+              <article class="socials-div">
+                <picture>
+                  <a href="mailto:syedabdulqahar2004@gmail.com" target="_blank">
+                    <img class="socials-picture-gmail" src="./about-me/Gmail.png" alt="">
+                  </a>
+                </picture>
+                <div class="socials-link-div">
+                  <a href="mailto:syedabdulqahar2004@gmail.com" target="_blank"> syedabdulqahar2004 </a>
+                </div>
+
+              </article>
+
+            </div>
+
+          </section>
 
         </main>
 
       </div>
 
     </section>
-  </main>  
-  
-  <main class="Project-Div">
-    <section class="Header">
-      
+  </main>
+
+  <main class="Project-Div" id="projects">
+    <section class="Project-Header">
+      <i class="fa-solid fa-diagram-project"></i>
+      Projects
     </section>
-    <section class="Body">
-      
+    <section class="Project-Body">
+      <button id="left" class="project-toggle-left">
+         <i class="fa-solid fa-left-long"></i>
+      </button>
+          <div class="main-container">
+            <div class="project-container">
+              <div class="project">
+                <div class="project-image">
+                  <a href="./projects/Instagram clone.png">
+                    <img class="project-ss" src="./projects/Instagram clone.png" alt="">
+                  </a>
+                </div>
+                <div class="project-name">
+                  <div class="project-name-header">
+                    <h2>Instagram Clone</h2>
+                    <a href="https://github.com/syedabdulqahar/instagram-clone">
+                      <i class="fa-brands fa-github">
+                        <div class="tooltip">
+                          Github Link
+                        </div>
+                      </i> 
+                    </a>
+                  </div>
+                  <p class="project-techstack">
+                    HTML CSS
+                  </p>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project-image">
+                  <a href="./projects/whatsapp-clone.png">
+                    <img class="project-ss" src="./projects/whatsapp-clone.png" alt="">
+                  </a>
+                </div>
+                <div class="project-name">
+                  <div class="project-name-header">
+                    <h2>Whatsapp Clone</h2>
+                    <a href="https://github.com/syedabdulqahar/WhatsApp-Clone">
+                      <i class="fa-brands fa-github">
+                        <div class="tooltip">
+                          Github Link
+                        </div>
+                      </i> 
+                    </a>
+                  </div>
+                  <p class="project-techstack">
+                    HTML CSS
+                  </p>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project-image">
+                  <a href="./projects/Youtube-clone.png">
+                    <img class="project-ss" src="./projects/Youtube-clone.png" alt="">
+                  </a>
+                </div>
+                <div class="project-name">
+                  <div class="project-name-header">
+                    <h2>Youtube Clone</h2>
+                    <a href="https://github.com/syedabdulqahar/youtube-clone">
+                      <i class="fa-brands fa-github">
+                        <div class="tooltip">
+                          Github Link
+                        </div>
+                      </i> 
+                    </a>
+                  </div>
+                  <p class="project-techstack">
+                    HTML CSS
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <button id="next" class="project-toggle-right">
+           <i class="fa-solid fa-right-long"></i>
+          </button>
     </section>
   </main>
 </body>
+
 <script>
- let navbar =document.querySelector('.mobile-freindly');
- const OpenMenu=()=>{
-    navbar.style.marginRight="0%";
- }
- const CloseMenu =()=>{
-  navbar.style.marginRight="-100%"
- }
+  let navbar = document.querySelector('.mobile-freindly');
+  const OpenMenu = () => {
+    navbar.style.marginRight = "0%";
+  }
+  const CloseMenu = () => {
+    navbar.style.marginRight = "-100%"
+  }
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      mobileFriendly.style.marginRight = "0"; // or remove inline style
+    }
+  });
+
+let container = document.querySelector(".project-container")
+let slides = document.querySelectorAll(".project")
+
+let index = 0
+
+document.getElementById("next").onclick = function(){
+
+index++
+
+if(index >= slides.length){
+index = 0
+}
+
+container.style.transform = `translateX(-${index * 100}%)`
+
+}
+
+document.getElementById("left").onclick = function(){
+
+index--
+
+if(index < 0){
+index = slides.length - 1
+}
+
+container.style.transform = `translateX(-${index * 100}%)`
+
+}
 </script>
+
 </html>
