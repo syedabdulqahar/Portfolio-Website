@@ -338,11 +338,12 @@ hr{
     width: 100%;
     max-width: 300px;
     height: auto;
-    min-height: 280px;
+    min-height: 300px;
   }
 
   .left-div main, .mid-div main, .right-div main {
     width: 85%;
+  
   }
 
   .Header {
@@ -357,9 +358,16 @@ hr{
   .skills-grid-div {
     flex-wrap: wrap;
     gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .scroll{
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
-
   .skills-div-html, .skills-div-css, .skills-div-js, .skills-div-git, .skills-div-github {
     width: 80px;
     height: 45px;
